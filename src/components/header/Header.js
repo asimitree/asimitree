@@ -12,9 +12,15 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="" className="logo">
-          <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
-          <span className="grey-color">/&gt;</span>
+          <span className="logo-name">
+            <img
+              alt="Simit Logo"
+              className="logo-svg"
+              src={require(`../../assets/images/${
+                isDark ? "logo-light.svg" : "logo-dark.svg"
+              }`)}
+            ></img>
+          </span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
@@ -30,20 +36,17 @@ function Header() {
           </li>
           {exp === true && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <a href="#experience">Spaces</a>
             </li>
           )}
           <li>
-            <a href="#opensource">Open Source</a>
+            <a href="#achievements">Visuals</a>
           </li>
           <li>
-            <a href="#achievements">Achievements</a>
+            <a href="#blogs">Learning</a>
           </li>
           <li>
-            <a href="#blogs">Blogs</a>
-          </li>
-          <li>
-            <a href="#talks">Talks</a>
+            <a href="#talks">Sketches</a>
           </li>
           <li>
             <a href="#contact">Contact Me</a>

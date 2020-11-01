@@ -83,7 +83,7 @@
   border-radius: 32px;
   transform: scale(1);
   transform-origin: 50% 50%;
-  transition: transform 0.4s ease-out;
+  transition: transform 4s ease-out;
 }
 
 .blog-card:hover::before {
@@ -91,12 +91,12 @@
 }
 
 .blog-card:hover > .small {
-  transition: all 0.3s ease-out;
+  transition: all 5s ease-out;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .blog-card:hover > h3 {
-  transition: all 0.3s ease-out;
+  transition: all 5s ease-out;
   color: #ffffff;
 }
 
@@ -115,7 +115,7 @@
     transform: scale(40);
   }
   .blog-card::before {
-    transition: transform 0.45s ease-out;
+    transition: transform 5s ease-out;
   }
 }
 
@@ -124,7 +124,7 @@
     transform: scale(50);
   }
   .blog-card::before {
-    transition: transform 0.5s ease-out;
+    transition: transform 5s ease-out;
   }
 }
 
@@ -133,7 +133,7 @@
     transform: scale(60);
   }
   .blog-card::before {
-    transition: transform 0.5s ease-out;
+    transition: transform 5s ease-out;
   }
 }
 
